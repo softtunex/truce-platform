@@ -1,0 +1,8 @@
+
+{
+  "name": "Truce Platform",
+  "description": "Secure transaction and escrow infrastructure mockup inspired by the Truce platform.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
