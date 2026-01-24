@@ -20,7 +20,7 @@ export const Hero: React.FC = () => (
         </div>
 
         <div className="space-y-6">
-          <h1 className="text-6xl md:text-[84px] font-[900] text-[#0D1B3E] leading-[0.95] tracking-tight">
+          <h1 className="text-6xl md:text-7xl font-[900] text-[#0D1B3E] leading-[0.95] tracking-tight">
             Transactions <br />
             <span className="text-[#006633] italic font-serif">
               Made Simple
@@ -78,7 +78,7 @@ export const Hero: React.FC = () => (
         <div className="relative z-10">
           {/* Main Image Container with Organic Clip Path */}
           <div className="relative group perspective-1000">
-            <div className="overflow-hidden rounded-[80px] md:rounded-[120px] shadow-[0_60px_100px_-30px_rgba(13,27,62,0.25)] border-[16px] border-white transition-transform duration-700 hover:rotate-1">
+            <div className="overflow-hidden rounded-[80px] md:rounded-[120px] shadow-[0_60px_100px_-30px_rgba(13,27,62,0.25)] transition-transform duration-700 hover:rotate-1">
               <img
                 src="/assets/images/francis-odeyemi-jLKDfxikHzM-unsplash.jpg"
                 alt="Security & Trust specialist"

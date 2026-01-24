@@ -92,9 +92,9 @@ export const PageHeader: React.FC<PageHeaderProps> = ({
                 className={`relative inline-flex rounded-full h-2 w-2 ${primaryAccents[theme]}`}
               ></span>
             </div>
-            {/* <span className="text-[9px] font-black uppercase tracking-[0.25em] text-slate-500">
-              Truce
-            </span> */}
+            <span className="text-[9px] font-black uppercase tracking-[0.25em] text-slate-500">
+              Africa’s No.1 Trust Infrastructure
+            </span>
           </div>
 
           <div className="space-y-4">

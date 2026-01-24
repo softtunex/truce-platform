@@ -1,78 +1,61 @@
-/* Global UI Refinements */
+/* Global Custom Styles & Animations */
 
 :root {
-  --truce-navy: #0d1b3e;
-  --truce-green: #006633;
+  --primary: #006633;
+  --primary-dark: #004d2a;
+  --accent: #2563eb;
+  --navy: #0d1b3e;
 }
 
 body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #1e293b;
+  background: #ffffff;
   margin: 0;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
   overflow-x: hidden;
-  background-color: #ffffff;
 }
 
-/* Scrollbar Styling */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f8fafc;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #e2e8f0;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #cbd5e1;
-}
-
-/* Advanced Fintech Patterns */
-.bg-grid-tech {
-  background-size: 40px 40px;
-  background-image:
-    linear-gradient(to right, rgba(13, 27, 62, 0.03) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(13, 27, 62, 0.03) 1px, transparent 1px);
-}
-
-.bg-hexagon {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cpath fill='%23ffffff' fill-opacity='0.15' d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9l10.99-6.35L25 17.9v12.7L13.99 36.95 3 30.6V17.9z'/%3E%3C/svg%3E");
-}
-
-.bg-hexagon-dark {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cpath fill='%230D1B3E' fill-opacity='0.08' d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9l10.99-6.35L25 17.9v12.7L13.99 36.95 3 30.6V17.9z'/%3E%3C/svg%3E");
-}
-
-/* Glassmorphism */
-.glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
-
-/* Animations */
-@keyframes beam {
+/* Custom Keyframes */
+@keyframes marquee-infinite {
   0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.8;
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(100%);
-    opacity: 0;
+    transform: translateX(-50%);
   }
 }
 
-.animate-beam {
-  animation: beam 4s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes float-delayed {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes pulse-soft {
@@ -87,44 +70,68 @@ body {
   }
 }
 
+/* Utility Animation Classes */
+.animate-marquee-infinite {
+  display: flex;
+  width: max-content;
+  animation: marquee-infinite 40s linear infinite;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 7s ease-in-out infinite 1s;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
 .animate-pulse-soft {
   animation: pulse-soft 8s ease-in-out infinite;
 }
 
-/* Custom Fade-in that ensures visibility if something fails */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Global UI Refinements */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
 }
 
-.animate-fade-in {
-  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.2);
+  opacity: 0.6;
+  cursor: pointer;
 }
 
-/* Custom Selection */
-::selection {
-  background: #006633;
-  color: white;
+/* Perspective for 3D transforms */
+.perspective-1000 {
+  perspective: 1000px;
 }
 
-/* Typography Refinement */
+/* Modern Fintech Pattern Utilities - Required for PageHeaders */
+.bg-grid-tech {
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, rgba(13, 27, 62, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(13, 27, 62, 0.03) 1px, transparent 1px);
+}
+
+.bg-hexagon-dark {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cpath fill='%230D1B3E' fill-opacity='0.08' d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9l10.99-6.35L25 17.9v12.7L13.99 36.95 3 30.6V17.9z'/%3E%3C/svg%3E");
+}
+
 .tracking-tightest {
   letter-spacing: -0.05em;
-}
-.tracking-widest-xl {
-  letter-spacing: 0.4em;
-}
-
-/* Perspective */
-.perspective-2000 {
-  perspective: 2000px;
-}
-.perspective-1500 {
-  perspective: 1500px;
 }
