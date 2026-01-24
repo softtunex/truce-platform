@@ -2,7 +2,7 @@ import React from "react";
 import { MOCK_DATA } from "../data/mockData.ts";
 
 export const Steps: React.FC = () => {
-  const imageUrl = "/assets/images/jealife-pictures-1PgSfwSxXx0-unsplash.jpg";
+  const imageUrl = "/images/jealife-pictures-1PgSfwSxXx0-unsplash.jpg";
 
   return (
     <section className="py-24 px-6 md:px-12 lg:px-20 bg-gradient-to-br from-[#f8fafc] via-white to-[#e9f1ee] overflow-hidden relative">

@@ -1,7 +1,7 @@
 import React from "react";
 
 export const FarmProduceSection: React.FC = () => {
-  const imageUrl = "/assets/images/richard-nyoni-1AoGjqdyDLU-unsplash.jpg";
+  const imageUrl = "/images/richard-nyoni-1AoGjqdyDLU-unsplash.jpg";
 
   return (
     <section className="py-24 px-6 md:px-12 lg:px-24 bg-[#f1f3f6] overflow-hidden relative">

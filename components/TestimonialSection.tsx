@@ -51,7 +51,7 @@ export const TestimonialSection: React.FC = () => {
           <div className="relative w-full max-w-[380px] flex-shrink-0 group animate-fade-in">
             <div className="w-full aspect-square rounded-[80px] overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)]">
               <img
-                src="/assets/images/African-family-cartoon.png"
+                src="/images/African-family-cartoon.png"
                 alt="Truce Community"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
               />

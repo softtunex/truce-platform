@@ -71,17 +71,17 @@ export const MOCK_DATA = {
     {
       title: "Define the Terms of the agreement",
       desc: "We let any individual or business create a Truce Agreement—a smart digital contract that governs a transaction between a buyer and a seller—The Truce defines the terms of agreement",
-      image: "/assets/images/truce-agreement.png",
+      image: "/images/truce-agreement.png",
     },
     {
       title: "Move payment into the Truce account",
       desc: "The fund is moved into a one-time Truce holding account (held securely through our infrastructure)—then funds are released automatically when a user satisfied",
-      image: "/assets/images/Businesswoman-Illustrations.png",
+      image: "/images/Businesswoman-Illustrations.png",
     },
     {
       title: "Truce is completed",
       desc: "The Truce is completed when both parties fulfill the terms of the agreement. Every completed Truce builds a record—a trust score, forming the world's first social currency of credibility",
-      image: "/assets/images/truce-delivery.png",
+      image: "/images/truce-delivery.png",
     },
   ],
   testimonials: [

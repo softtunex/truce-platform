@@ -80,7 +80,7 @@ export const Hero: React.FC = () => (
           <div className="relative group perspective-1000">
             <div className="overflow-hidden rounded-[80px] md:rounded-[120px] shadow-[0_60px_100px_-30px_rgba(13,27,62,0.25)] transition-transform duration-700 hover:rotate-1">
               <img
-                src="/assets/images/francis-odeyemi-jLKDfxikHzM-unsplash.jpg"
+                src="/images/francis-odeyemi-jLKDfxikHzM-unsplash.jpg"
                 alt="Security & Trust specialist"
                 className="w-full h-auto grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
               />

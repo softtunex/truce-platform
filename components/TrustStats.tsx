@@ -15,7 +15,7 @@ export const TrustStats: React.FC = () => {
             <div className="relative animate-float">
               <div className="relative z-10 rounded-[40px] overflow-hidden ">
                 <img
-                  src="/assets/images/truce-Businessman.png"
+                  src="/images/truce-Businessman.png"
                   alt="Professional at work"
                   className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105"
                 />
@@ -82,7 +82,7 @@ export const TrustStats: React.FC = () => {
             {/* Delivery/Commerce Illustration Placeholder */}
             <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-32 md:w-44 pointer-events-none group-hover:scale-110 transition-transform duration-500">
               <img
-                src="/assets/images/truce-delivery.png"
+                src="/images/truce-delivery.png"
                 alt="Delivery"
                 className="w-full h-full object-contain rounded-3xl opacity-90"
               />

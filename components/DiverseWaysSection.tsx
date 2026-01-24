@@ -78,7 +78,7 @@ export const DiverseWaysSection: React.FC = () => {
                 {/* Main Character Placeholder (Stylized Image) */}
                 <div className="relative z-10 rounded-[60px] overflow-hidden border-8 border-white/10 shadow-3xl">
                   <img
-                    src="/assets/images/happy-joyous-man-clenches-fist-with-triumph-watches-football-match-online-focused-smartphone-device-wears-round-spectacles.jpg"
+                    src="/images/happy-joyous-man-clenches-fist-with-triumph-watches-football-match-online-focused-smartphone-device-wears-round-spectacles.jpg"
                     alt="Success with Truce"
                     className="w-full h-auto grayscale-[20%] group-hover:grayscale-0 transition-all duration-700"
                   />

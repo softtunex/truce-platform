@@ -78,7 +78,7 @@ export const OfferSection: React.FC = () => {
             <div className="relative group">
               {/* Using a high-quality stylized illustration placeholder */}
               <img
-                src="/assets/images/truce-man-with-phone.png"
+                src="/images/truce-man-with-phone.png"
                 alt="Truce Experience"
                 className="w-full h-auto rounded-[10px] grayscale-[20%] group-hover:grayscale-0 transition-all duration-700"
               />

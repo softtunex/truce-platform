@@ -32,7 +32,7 @@
 //           <div className="relative">
 //             <div className="w-48 h-48 md:w-64 md:h-64 rounded-[60px] overflow-hidden shadow-2xl border-8 border-white">
 //               <img
-//                 src="/assets/images/francis-odeyemi--LK4GItKS7M-unsplash.jpg"
+//                 src="/images/francis-odeyemi--LK4GItKS7M-unsplash.jpg"
 //                 alt="User Portrait"
 //                 className="w-full h-full object-cover"
 //                 onError={(e) => {
@@ -75,7 +75,7 @@
 //           {/* Agreement Illustration: Positioned AT THE BACK of the form */}
 //           <div className="absolute md:-left-64 top-1/2 -translate-y-1/2 z-0 w-72 md:w-96 pointer-events-none sm:hidden md:block">
 //             <img
-//               src="/assets/images/truce-agreement.png"
+//               src="/images/truce-agreement.png"
 //               alt="Agreement Illustration"
 //               className="w-full h-auto opacity-90 drop-shadow-2xl"
 //               onError={(e) => {
