@@ -12,6 +12,7 @@ export const Home: React.FC = () => {
       <PartnerLogos />
       <AgreementSection />
       <TrustStats />
+      <DiverseWaysSection />
     </>
   );
 };
