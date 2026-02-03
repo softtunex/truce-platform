@@ -1,151 +1,129 @@
 import React from "react";
 
 export const Hero: React.FC = () => (
-  <section className="relative pt-20 pb-32 px-6 overflow-hidden bg-white">
-    {/* Abstract Background Orbs */}
-    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-green-100/40 rounded-full blur-[120px] -mr-48 -mt-48 animate-pulse duration-[10s] -z-10" />
-    <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-blue-100/30 rounded-full blur-[100px] -ml-24 -mb-24 -z-10" />
-
-    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
-      {/* Left Content */}
-      <div className="flex-1 space-y-10 text-center lg:text-left z-10">
-        <div className="inline-flex items-center gap-3 bg-[#E7F3ED] px-5 py-3 rounded-full border border-green-200/50 shadow-sm animate-fade-in">
-          <span className="flex h-3 w-3 relative">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-          </span>
-          <span className="text-[11px] font-black text-[#006633] tracking-[0.15em] uppercase">
-            Africa’s No.1 Trust Infrastructure
-          </span>
-        </div>
-
-        <div className="space-y-6">
-          <h1 className="text-6xl md:text-7xl font-[900] text-[#0D1B3E] leading-[0.95] tracking-tight">
-            Transactions <br />
-            <span className="text-[#006633] italic font-serif">
-              Made Simple
-            </span>{" "}
-            <br />& Secure
-          </h1>
-          <p className="text-xl text-slate-500 font-medium max-w-xl mx-auto lg:mx-0 leading-relaxed">
-            Raise a Truce agreement today, lock the terms, and protect your
-            capital. We activate{" "}
-            <span className="text-[#006633] font-bold">
-              digital accountability
-            </span>{" "}
-            before a single cent is moved.
-          </p>
-        </div>
-
-        <div className="space-y-4">
-          <div className="flex items-center gap-4 justify-center lg:justify-start">
-            <div className="h-[2px] w-12 bg-[#006633]"></div>
-            <h3 className="text-lg font-black text-[#0D1B3E] uppercase tracking-wider">
-              Never Lose Money to a Bad Deal
-            </h3>
+  <section className="relative w-full bg-white overflow-hidden pt-10 pb-20 lg:pt-16 lg:pb-24">
+    <div className="max-w-[1150px] mx-auto px-6 lg:px-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        {/* --- Left Column: Content --- */}
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-[#E6F3EC] px-3 py-2 sm:px-4 rounded-lg border border-green-100 max-w-full">
+            <div className="text-[#006633] flex-shrink-0">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M18 2H6C3.79 2 2 3.79 2 6v12c0 2.21 1.79 4 4 4h12c2.21 0 4-1.79 4-4V6c0-2.21-1.79-4-4-4zm0 16H6c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2zM7 9h10v2H7zm0 4h7v2H7z"
+                  opacity="0.3"
+                />
+                <path d="M7 11h10v-2H7v2zm0 4h7v-2H7v2z" />
+              </svg>
+            </div>
+            {/* Added break-words to prevent overflow and adjusted size */}
+            <span className="text-[10px] sm:text-xs font-semibold text-[#0D1B3E] tracking-tight text-left leading-tight">
+              Africa’s No.1 Trust infrastructure, built for all transaction
+            </span>
           </div>
-          <p className="text-slate-400 text-sm font-medium pl-0 lg:pl-16">
-            Your assets only transition when both parties honor the digital
-            contract.
+
+          {/* Headline */}
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-[900] text-[#0D1B3E] leading-[1.05] tracking-tight">
+            Transactions Made <br />
+            Simple & Secure
+          </h1>
+
+          {/* Paragraph */}
+          <p className="text-base text-gray-500 font-medium leading-relaxed max-w-md mx-auto lg:mx-0">
+            Raise a Truce agreement today, lock the terms, protect your money
+            activate trust and make both sides accountable before payment is
+            released
           </p>
+
+          {/* Buttons - CHANGED: flex-col on mobile, flex-row on larger screens */}
+          <div className="flex flex-col sm:flex-row gap-4 pt-2 w-full sm:w-auto justify-center lg:justify-start">
+            <button className="w-full sm:w-auto px-8 py-3.5 rounded-xl border border-gray-200 text-[#0D1B3E] font-bold text-sm hover:border-gray-300 hover:bg-gray-50 transition-all whitespace-nowrap">
+              Sign in
+            </button>
+            <button className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-[#0F5935] text-white font-bold text-sm hover:bg-[#0b4629] transition-all shadow-lg shadow-green-900/10 whitespace-nowrap">
+              Create Truce Agreement
+            </button>
+          </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start pt-4">
-          <button className="bg-white border-2 border-slate-100 text-slate-800 px-12 py-5 rounded-2xl font-black hover:bg-slate-50 hover:border-slate-300 transition-all text-sm uppercase tracking-widest shadow-xl shadow-slate-200/20">
-            Sign in
-          </button>
-          <button className="bg-[#006633] text-white px-12 py-5 rounded-2xl font-black hover:bg-[#004D2A] transition-all text-sm uppercase tracking-widest shadow-[0_20px_40px_-10px_rgba(0,102,51,0.4)] group flex items-center gap-3">
-            Create Agreement
-            <svg
-              className="w-5 h-5 transition-transform group-hover:translate-x-1"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={3}
-                d="M14 5l7 7m0 0l-7 7m7-7H3"
-              />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      {/* Right Visual Content - Much more sophisticated */}
-      <div className="flex-1 relative w-full max-w-[600px] lg:max-w-none">
-        <div className="relative z-10">
-          {/* Main Image Container with Organic Clip Path */}
-          <div className="relative group perspective-1000">
-            <div className="overflow-hidden rounded-[80px] md:rounded-[120px] shadow-[0_60px_100px_-30px_rgba(13,27,62,0.25)] transition-transform duration-700 hover:rotate-1">
+        {/* --- Right Column: Image & Floaters --- */}
+        <div className="relative w-full flex justify-center lg:justify-end mt-4 lg:mt-0">
+          {/* Main Image Container */}
+          <div className="relative w-full max-w-[400px] aspect-square">
+            {/* Image with rounded corners */}
+            <div className="relative z-10 overflow-hidden rounded-[40px] shadow-2xl bg-gray-100 w-full h-full animate-float">
               <img
                 src="/images/francis-odeyemi-jLKDfxikHzM-unsplash.jpg"
-                alt="Security & Trust specialist"
-                className="w-full h-auto grayscale-[20%] group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100"
+                alt="Secure Transaction"
+                className="w-full h-full object-cover object-center scale-x-[-1]"
               />
             </div>
 
-            {/* Premium Trust Card - Floating & Glassmorphic */}
-            <div className="absolute -top-12 -left-16  bg-white/80 backdrop-blur-2xl p-8 rounded-[40px] shadow-2xl border border-white/50 max-w-[360px] animate-float">
-              <div className="flex items-center mb-4">
-                {/* <div className="w-10 h-10 bg-green-100 rounded-full flex items-center justify-center text-xl">
-                  ✨
-                </div>
-                <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em]">
-                  Premium trust
-                </p> */}
-              </div>
-              <p className="text-sm font-black text-[#0D1B3E] mb-5 leading-tight">
-                Premium trust, Connecting verified businesses in a global
-                network of trust.
-              </p>
-              <div className="flex items-end gap-3 mb-6">
-                <p className="text-3xl font-black text-[#0D1B3E] tracking-tighter leading-none">
+            {/* Float Card 1: Top Left */}
+            <div className="absolute top-8 -left-4 sm:-left-16 bg-white p-5 rounded-2xl shadow-[0_20px_40px_-10px_rgba(0,0,0,0.1)] z-20 w-[240px] border border-gray-100 hidden sm:block ">
+              <h3 className="text-[11px] font-bold text-[#0D1B3E] leading-snug mb-3">
+                Premium trust, connecting Businesses in a Network of Trust!
+              </h3>
+
+              <div className="flex items-end gap-2 mb-3">
+                <span className="text-2xl font-[900] text-[#0D1B3E] leading-none">
                   9.5
-                </p>
-                <div className="space-y-1">
-                  <div className="flex text-amber-400 text-[10px]">★★★★★</div>
-                  <p className="text-[9px] font-black text-slate-400 uppercase">
-                    Expert Rating
-                  </p>
+                </span>
+                <div className="flex text-amber-400 text-[10px] mb-1">
+                  ★★★★<span className="text-amber-400/50">★</span>
                 </div>
               </div>
-              <button className="bg-[#006633] text-white px-5 py-3 rounded-2xl text-[10px] font-black w-full uppercase tracking-widest hover:bg-[#004D2A] transition-all shadow-lg shadow-green-900/20">
-                Join Community
+
+              <button className="w-full bg-[#0F5935] text-white text-[10px] font-bold py-2.5 rounded-lg hover:bg-[#0b4629]">
+                Join our Truce community
               </button>
             </div>
 
-            {/* Social Currency Card - Layered over */}
-            <div className="absolute -bottom-10 -right-6 md:-right-10 bg-[#0D1B3E] p-6 rounded-[40px] shadow-2xl flex items-center gap-5 border border-white/10 max-w-[280px] text-white animate-float-delayed">
-              <div className="relative flex-shrink-0">
-                <div className="w-14 h-14 bg-gradient-to-br from-[#006633] to-green-400 rounded-2xl flex items-center justify-center shadow-lg">
+            {/* Float Card 2: Bottom Right */}
+            <div className="absolute -bottom-6 -right-2 sm:-right-8 bg-white p-4 rounded-3xl shadow-[0_20px_40px_-10px_rgba(0,0,0,0.1)] z-20 w-[190px] border border-gray-100 flex flex-col items-center text-center">
+              <div className="w-full h-16 bg-[#E6F3EC] rounded-xl mb-3 flex items-center justify-center relative overflow-hidden">
+                <div className="flex items-center gap-1 text-[#0F5935]">
                   <svg
                     className="w-8 h-8"
-                    fill="currentColor"
                     viewBox="0 0 24 24"
+                    fill="currentColor"
                   >
-                    <path d="M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z" />
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
                   </svg>
                 </div>
-                <div className="absolute -top-2 -right-2 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-[10px] border-2 border-[#0D1B3E] font-bold">
-                  ✓
-                </div>
               </div>
-              <p className="text-xs font-bold leading-relaxed">
-                Join the world's first <br />
-                <span className="text-green-400 font-black">
-                  Social Currency of Trust
-                </span>
+
+              <p className="text-[10px] font-bold text-[#0D1B3E] leading-tight">
+                Join the world’s first <br /> social currency of Trust
               </p>
             </div>
           </div>
         </div>
-
-        {/* Decorative Elements */}
-        <div className="absolute -z-10 -top-20 -right-20 w-64 h-64 bg-slate-100 rounded-full opacity-50" />
-        <div className="absolute -z-10 bottom-0 right-1/2 w-48 h-48 border-4 border-green-50 rounded-full opacity-50" />
       </div>
     </div>
+
+    <style>{`
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      @keyframes float-delayed {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-6px); }
+      }
+      .animate-float {
+        animation: float 6s ease-in-out infinite;
+      }
+      .animate-float-delayed {
+        animation: float-delayed 6s ease-in-out infinite;
+        animation-delay: 3s;
+      }
+    `}</style>
   </section>
 );
