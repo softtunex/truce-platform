@@ -2,43 +2,43 @@ export const MOCK_DATA = {
   partners: [
     {
       name: "Google",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+      logo: "/images/partners-logos/google.png",
     },
     {
       name: "FCCPC",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/d/df/Shopping_cart_icon.svg",
+      logo: "/images/partners-logos/fccpc.png",
     },
     {
       name: "Jumia",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Jumia_Logo.svg/1200px-Jumia_Logo.svg.png",
+      logo: "/images/partners-logos/jumia.png",
     },
     {
       name: "PAPSS",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/b/b5/Bitcoin.svg",
+      logo: "/images/partners-logos/papss.png",
     },
     {
       name: "Konga",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Amazon_logo.svg",
+      logo: "/images/partners-logos/konga.png",
     },
     {
       name: "Amazon",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+      logo: "/images/partners-logos/amazon.png",
     },
     {
       name: "Bitcoin",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg",
+      logo: "/images/partners-logos/bitcoin.png",
     },
     {
       name: "eBay",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg",
+      logo: "/images/partners-logos/ebay.png",
     },
     {
       name: "Temu",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+      logo: "/images/partners-logos/temu.png",
     },
     {
       name: "NIDCOM",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+      logo: "/images/partners-logos/nidcom.png",
     },
   ],
   features: [
