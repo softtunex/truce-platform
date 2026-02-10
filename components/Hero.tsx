@@ -1,8 +1,8 @@
 import React from "react";
 
 export const Hero: React.FC = () => (
-  <section className="relative w-full bg-white overflow-hidden pt-10 pb-20 lg:pt-16 lg:pb-24">
-    <div className="max-w-[1150px] mx-auto px-6 lg:px-8">
+  <section className="relative w-full bg-white overflow-hidden pt-10 pb-20 lg:pt-16 ">
+    <div className="max-w-[90%] mx-auto px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         {/* --- Left Column: Content --- */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
@@ -29,13 +29,12 @@ export const Hero: React.FC = () => (
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-[900] text-[#0D1B3E] leading-[1.05] tracking-tight">
-            Transactions Made <br />
-            Simple & Secure
+          <h1 className="text-4xl sm:text-4xl lg:text-5xl font-[900] text-[#0D1B3E] leading-[1.05] tracking-tight">
+            Transactions Made Simple & Secure
           </h1>
 
           {/* Paragraph */}
-          <p className="text-base text-gray-500 font-medium leading-relaxed max-w-md mx-auto lg:mx-0">
+          <p className="text-base text-gray-500 font-medium leading-relaxed mx-auto lg:mx-0">
             Raise a Truce agreement today, lock the terms, protect your money
             activate trust and make both sides accountable before payment is
             released
@@ -66,7 +65,7 @@ export const Hero: React.FC = () => (
             </div>
 
             {/* Float Card 1: Top Left */}
-            <div className="absolute top-8 -left-4 sm:-left-16 bg-white p-5 rounded-2xl shadow-[0_20px_40px_-10px_rgba(0,0,0,0.1)] z-20 w-[240px] border border-gray-100 hidden sm:block ">
+            <div className="absolute top-8 -left-4 sm:-left-40 bg-white p-5 rounded-2xl shadow-[0_20px_40px_-10px_rgba(0,0,0,0.1)] z-20 w-[240px] border border-gray-100 hidden sm:block ">
               <h3 className="text-[11px] font-bold text-[#0D1B3E] leading-snug mb-3">
                 Premium trust, connecting Businesses in a Network of Trust!
               </h3>
@@ -86,7 +85,7 @@ export const Hero: React.FC = () => (
             </div>
 
             {/* Float Card 2: Bottom Right */}
-            <div className="absolute -bottom-6 -right-2 sm:-right-8 bg-white p-4 rounded-3xl shadow-[0_20px_40px_-10px_rgba(0,0,0,0.1)] z-20 w-[190px] border border-gray-100 flex flex-col items-center text-center">
+            <div className="absolute -bottom-6 -right-2 sm:-right-20 bg-white p-4 rounded-3xl shadow-[0_20px_40px_-10px_rgba(0,0,0,0.1)] z-20 w-[190px] border border-gray-100 flex flex-col items-center text-center">
               <div className="w-full h-16 bg-[#E6F3EC] rounded-xl mb-3 flex items-center justify-center relative overflow-hidden">
                 <div className="flex items-center gap-1 text-[#0F5935]">
                   <svg

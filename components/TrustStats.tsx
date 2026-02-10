@@ -12,7 +12,7 @@ export const TrustStats: React.FC = () => {
     <section className="py-16 px-6 bg-white overflow-hidden">
       <div className="max-w-[90%] mx-auto flex flex-col lg:flex-row gap-6 items-stretch">
         {/* --- Left: Main Green Protected Card --- */}
-        <div className="flex-[2] bg-[#0F5935] rounded-[40px] p-8 sm:p-10 flex flex-col sm:flex-row items-center gap-8 relative overflow-hidden shadow-2xl shadow-green-900/20">
+        <div className="flex-[2] bg-[#0F5935] rounded-[60px] p-8 sm:p-10 flex flex-col sm:flex-row items-center gap-1 relative overflow-hidden shadow-2xl shadow-green-900/20">
           {/* Decorative Pattern (Subtle) */}
           <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
 
