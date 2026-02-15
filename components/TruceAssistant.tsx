@@ -42,8 +42,8 @@ export const TruceAssistant: React.FC<Props> = ({ onSuggest }) => {
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-2 w-2 bg-[#006633]"></span>
         </div>
-        <label className="text-[10px] font-[900] text-[#006633] uppercase tracking-widest">
-          Smart Truce Assistant
+        <label className="text-[10px] font-[900] text-[#006633] tracking-widest">
+          Truce AI Assistant
         </label>
       </div>
 

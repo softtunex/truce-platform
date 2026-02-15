@@ -43,7 +43,7 @@ export const MOCK_DATA = {
   ],
   features: [
     {
-      title: "Secured Transactions with Truce smart agreement",
+      title: "Secured Transactions",
       desc: "Lock transaction with digital agreement. Funds are held safely until both parties are satisfied.",
       icon: "🛡️",
       link: "Get started",
@@ -70,20 +70,27 @@ export const MOCK_DATA = {
   steps: [
     {
       title: "Define the Terms of the agreement",
-      desc: "We let any individual or business create a Truce Agreement—a smart digital contract that governs a transaction between a buyer and a seller—The Truce defines the terms of agreement",
+      desc: "We let any individual or business create a Truce Agreement—a smart digital contract that governs a transaction between a buyer and a seller—The Truce defines the terms of agreement.",
       image: "/images/truce-agreement.png",
     },
     {
       title: "Move payment into the Truce account",
-      desc: "The fund is moved into a one-time Truce holding account (held securely through our infrastructure)—then funds are released automatically when a user satisfied",
+      desc: "The fund is moved into a one-time Truce holding account (held securely through our infrastructure)—then funds are released automatically when a user satisfied.",
       image: "/images/Businesswoman-Illustrations.png",
     },
     {
       title: "Truce is completed",
-      desc: "The Truce is completed when both parties fulfill the terms of the agreement. Every completed Truce builds a record—a trust score, forming the world's first social currency of credibility",
+      desc: "The Truce is completed when both parties fulfill the terms of the agreement. Every completed Truce builds a record—a trust score, forming the world’s first social currency of credibility.",
       image: "/images/truce-delivery.png",
     },
   ],
+  offerSection: {
+    heroImage: "/images/truce-rider.png", // The Glovo rider image
+    comparisonImages: [
+      "/images/truce-car-blur.png", // Blurred car
+      "/images/truce-bg-blur.png", // Blurred background
+    ],
+  },
   testimonials: [
     {
       name: "Ade Kahinde",

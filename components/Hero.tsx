@@ -7,7 +7,7 @@ export const Hero: React.FC = () => (
         {/* --- Left Column: Content --- */}
         <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-[#E6F3EC] px-3 py-2 sm:px-4 rounded-lg border border-green-100 max-w-full">
+          <div className="inline-flex items-center gap-2 bg-[#E6F3EC] px-3 py-2 sm:px-4 rounded-lg border border-green-100 max-w-full mb-4">
             <div className="text-[#006633] flex-shrink-0">
               <svg
                 width="18"
@@ -29,8 +29,9 @@ export const Hero: React.FC = () => (
           </div>
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-4xl lg:text-5xl font-[900] text-[#0D1B3E] leading-[1.05] tracking-tight">
-            Transactions Made Simple & Secure
+          <h1 className="text-4xl sm:text-4xl lg:text-5xl 2xl:text-6xl font-[1000] leading-[1.05] tracking-tight">
+            Transactions Made <br />
+            Simple & Secure
           </h1>
 
           {/* Paragraph */}
@@ -110,17 +111,17 @@ export const Hero: React.FC = () => (
     <style>{`
       @keyframes float {
         0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-6px); }
+        50% { transform: translateY(-15px); }
       }
       @keyframes float-delayed {
         0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-6px); }
+        50% { transform: translateY(-15px); }
       }
       .animate-float {
-        animation: float 6s ease-in-out infinite;
+        animation: float 5s ease-in-out infinite;
       }
       .animate-float-delayed {
-        animation: float-delayed 6s ease-in-out infinite;
+        animation: float-delayed 5s ease-in-out infinite;
         animation-delay: 3s;
       }
     `}</style>

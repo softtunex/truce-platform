@@ -26,7 +26,7 @@ export const AgreementSection: React.FC = () => {
     otp: "",
     fullName: "",
     phone: "",
-    // Seller/Counterparty Fields
+    // Seller/Recipient Fields
     sellerName: "",
     sellerEmail: "",
     sellerPhone: "",
@@ -149,7 +149,7 @@ export const AgreementSection: React.FC = () => {
               </div>
 
               {/* Form Content Area - Increased Padding */}
-              <div className="p-8 sm:p-10 min-h-[550px] flex flex-col">
+              <div className="p-8 sm:p-12 min-h-[550px] flex flex-col">
                 {activeTab === "create" ? (
                   <div className="flex-1 flex flex-col">
                     {/* Progress Indicator */}
@@ -374,12 +374,12 @@ export const AgreementSection: React.FC = () => {
                       </div>
                     )}
 
-                    {/* --- STEP 3: Seller/Counterparty Details --- */}
+                    {/* --- STEP 3: Seller/Recipient Details --- */}
                     {step === 3 && (
                       <div className="space-y-6 animate-fade-in py-4">
                         <div className="text-center space-y-2">
                           <h3 className="text-3xl font-[900] text-[#0D1B3E]">
-                            Counterparty Details
+                            Recipient Details
                           </h3>
                           <p className="text-gray-500 text-sm font-medium">
                             Who are you transacting with?
@@ -389,7 +389,7 @@ export const AgreementSection: React.FC = () => {
                         <div className="space-y-5">
                           <div className="space-y-1.5">
                             <label className="text-[11px] font-bold text-[#0D1B3E] uppercase tracking-wide">
-                              Counterparty Name{" "}
+                              Recipient Name{" "}
                               <span className="text-amber-500">*</span>
                             </label>
                             <input
@@ -497,7 +497,7 @@ export const AgreementSection: React.FC = () => {
                           <div className="flex justify-between items-start">
                             <div>
                               <p className="text-[10px] uppercase font-bold text-gray-400">
-                                Buyer
+                                Sender
                               </p>
                               <p className="text-sm font-bold text-[#0D1B3E]">
                                 {formData.email}
@@ -528,7 +528,7 @@ export const AgreementSection: React.FC = () => {
 
                           <div className="pt-3 border-t border-gray-200 flex justify-between items-center">
                             <span className="text-sm font-bold text-gray-500">
-                              Total Locked
+                              Total to be Locked
                             </span>
                             <span className="text-2xl font-[900] text-[#0F5935]">
                               ₦ {formData.amount}
@@ -550,7 +550,7 @@ export const AgreementSection: React.FC = () => {
                           }}
                           className="text-[#0F5935] font-bold text-sm uppercase tracking-wider hover:underline pt-2"
                         >
-                          Start New Agreement
+                          Go to Dashboard
                         </button>
                       </div>
                     )}

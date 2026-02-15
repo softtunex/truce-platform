@@ -6,64 +6,71 @@ import { AgreementSection } from "../components/AgreementSection";
 export const Features: React.FC = () => {
   return (
     <div className="animate-fade-in bg-white">
-      {/* --- BANNER HERO SECTION --- */}
-      {/* Fixed height, not full screen. Linear gradient background. */}
-      <div className="relative w-full h-[550px] lg:h-[600px] bg-gradient-to-r from-[#F5F7FA] via-[#D8DEE6] to-[#6B7C8C] overflow-hidden">
-        <div className="max-w-[1150px] mx-auto px-6 h-full relative">
-          <div className="flex items-center h-full">
-            {/* --- Typography (Left) --- */}
-            <div className="relative z-10 max-w-3xl pt-10">
-              <h1 className="text-5xl sm:text-6xl lg:text-[72px] font-[900] text-black leading-[0.95] tracking-tight mb-6">
-                Safe transactions <br />
-                Starts with Truce Smart <br />
-                Agreement
-              </h1>
+      {/* --- HERO BANNER SECTION --- */}
+      {/* Background Gradient: Light Grey -> Greyish Blue -> Dark Teal on Right */}
+      <div className="relative w-full h-[450px] lg:h-[480px] bg-[linear-gradient(90deg,#F5F7FA_0%,#E2E8F0_45%,#39555A_100%)] overflow-hidden">
+        <div className="max-w-[1280px] mx-auto px-6 h-full relative flex items-center">
+          {/* --- Typography (Left) --- */}
+          <div className="relative z-20 max-w-xl flex flex-col justify-center">
+            <h1 className="text-4xl sm:text-4xl lg:text-5xl 2xl:text-5xl font-[1000] leading-[1.05] tracking-tight mb-5">
+              Safe transactions <br />
+              Starts with Truce Smart <br />
+              Agreement
+            </h1>
 
-              {/* Lime Green Rectangle Accent */}
-              <div className="w-24 h-3 bg-[#A3E635] mb-5"></div>
+            {/* Lime Green Rectangle Accent */}
+            <div className="w-24 h-2.5 bg-[#84cc16] mb-5"></div>
 
-              <p className="text-gray-600 font-medium text-lg sm:text-xl tracking-tight">
-                Monies move, only when your terms are met
-              </p>
-            </div>
+            <p className="text-gray-500 font-medium text-base sm:text-lg tracking-tight">
+              Monies move, only when your terms are met
+            </p>
+          </div>
 
-            {/* --- Image (Right - Anchored to bottom/right) --- */}
-            <div className="absolute right-[-50px] lg:right-[-100px] bottom-0 h-[85%] lg:h-[95%] w-auto z-0 hidden sm:block">
-              <img
-                src="/images/truce-man-with-phone.png"
-                alt="Safe Transactions"
-                className="h-full w-auto object-contain object-bottom drop-shadow-2xl"
-                onError={(e) => {
-                  // Fallback to prevent broken layout if image is missing
-                  (e.target as HTMLImageElement).style.display = "none";
-                }}
-              />
-            </div>
+          {/* --- Image Area (Right) --- */}
+          {/* 
+              FIX APPLIED:
+              1. Anchored to 'top-10' (instead of bottom) to show the head.
+              2. 'h-[135%]' creates the Zoom effect.
+              3. 'overflow-hidden' on container cuts off the legs automatically.
+          */}
+          <div className="absolute right-[-40px] lg:right-[-20px] top-0 h-full w-1/2 hidden sm:flex justify-end pointer-events-none">
+            {/* Dark Shadow/Glow behind the character */}
+            <div className="absolute right-10 top-20 w-[400px] h-[400px] bg-black/20 blur-[90px] rounded-full z-0"></div>
+
+            {/* The Man Image */}
+            <img
+              src="/images/truce-man-with-phone.png"
+              alt="Safe Transactions"
+              // top-10 pushes the head down slightly so it's not touching the edge
+              // h-[135%] makes it big (Zoomed)
+              // object-top ensures the scaling respects the top of the image (Head)
+              className="absolute top-[-50px] right-0 h-[135%] w-auto object-contain object-top drop-shadow-[0_20px_40px_rgba(0,0,0,0.6)] z-10"
+              onError={(e) => {
+                (e.target as HTMLImageElement).style.display = "none";
+              }}
+            />
           </div>
         </div>
       </div>
 
       {/* --- Rest of the Page --- */}
-      <div>
+      <div className="bg-[#F8F9FB]">
         <Steps />
+        <AgreementSection />
+
         <OfferSection />
 
-        <div className="bg-[#f8fafc] py-20 border-t border-gray-100">
-          <div className="max-w-[1150px] mx-auto px-6">
-            <div className="text-center mb-16 max-w-2xl mx-auto space-y-4">
-              <h2 className="text-3xl md:text-5xl font-[900] text-[#0D1B3E] tracking-tight">
-                Ready to start?
-              </h2>
-              <p className="text-gray-500 font-medium text-base md:text-lg">
-                Create your first Truce agreement in seconds.
-              </p>
-            </div>
-            {/* Agreement Section */}
-            <div className="transform scale-95 lg:scale-100 origin-top">
-              <AgreementSection />
-            </div>
+        {/* Agreement Section Container */}
+        {/* <div className="py-16 lg:py-20">
+          <div className="text-center max-w-2xl mx-auto mb-10 space-y-2 px-6">
+            <h2 className="text-3xl lg:text-4xl font-[900] text-[#0D1B3E] tracking-tight">
+              Ready to start?
+            </h2>
+            <p className="text-gray-500 text-sm">
+              Create your first Truce agreement in seconds.
+            </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
