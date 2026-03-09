@@ -1,8 +1,8 @@
 import React from "react";
-import { AgreementSection } from "../components/AgreementSection";
-import { TruceDealSection } from "../components/TruceDealSection";
-import { FarmProduceSection } from "../components/FarmProduceSection";
-import { ProtectionLayerSection } from "../components/ProtectionLayerSection";
+import { AgreementSection } from "../../components/marketing/AgreementSection";
+import { TruceDealSection } from "../../components/marketing/TruceDealSection";
+import { FarmProduceSection } from "../../components/marketing/FarmProduceSection";
+import { ProtectionLayerSection } from "../../components/marketing/ProtectionLayerSection";
 
 export const Transactions: React.FC = () => {
   return (

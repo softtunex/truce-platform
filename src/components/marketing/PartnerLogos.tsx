@@ -1,5 +1,5 @@
 import React from "react";
-import { MOCK_DATA } from "../data/mockData.ts";
+import { MOCK_DATA } from "../../data/mockData.ts";
 
 export const PartnerLogos: React.FC = () => {
   // We duplicate the list to ensure the marquee can loop seamlessly

@@ -1,7 +1,7 @@
 import React from "react";
-import { PageHeader } from "../components/PageHeader.tsx";
-import { TestimonialSection } from "../components/TestimonialSection.tsx";
-import { ValueProtectionSection } from "../components/ValueProtectionSection.tsx";
+import { PageHeader } from "../../components/marketing/PageHeader.tsx";
+import { TestimonialSection } from "../../components/marketing/TestimonialSection.tsx";
+import { ValueProtectionSection } from "../../components/marketing/ValueProtectionSection.tsx";
 
 export const Testimonials: React.FC = () => {
   return (

@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 // Assuming TruceAssistant exists in your project.
 import { TruceAssistant } from "./TruceAssistant";
+import { useNavigate } from "react-router-dom";
 
 // Define the steps for the wizard
 type WizardStep = 1 | 2 | 3 | 4;
 
 export const AgreementSection: React.FC = () => {
   const [activeTab, setActiveTab] = useState<"create" | "login">("create");
+  const navigate = useNavigate();
 
   // Wizard State
   const [step, setStep] = useState<WizardStep>(1);
@@ -537,15 +539,9 @@ export const AgreementSection: React.FC = () => {
 
                         <button
                           onClick={() => {
-                            setStep(1);
-                            setFormData({
-                              ...formData,
-                              title: "",
-                              description: "",
-                              amount: "",
-                              startDate: "",
-                              endDate: "",
-                            });
+                            // In a real app, you would save the agreement ID to context/localstorage here
+                            // so the dashboard knows to show it after login.
+                            navigate("/dashboard");
                           }}
                           className="text-[#0F5935] font-bold text-sm uppercase tracking-wider hover:underline pt-2"
                         >

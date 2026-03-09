@@ -1,4 +1,7 @@
 /* Global Custom Styles & Animations */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --primary: #006633;

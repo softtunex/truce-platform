@@ -1,7 +1,7 @@
 import React from "react";
-import { Steps } from "../components/Steps";
-import { OfferSection } from "../components/OfferSection";
-import { AgreementSection } from "../components/AgreementSection";
+import { Steps } from "../../components/marketing/Steps";
+import { OfferSection } from "../../components/marketing/OfferSection";
+import { AgreementSection } from "../../components/marketing/AgreementSection";
 
 export const Features: React.FC = () => {
   return (

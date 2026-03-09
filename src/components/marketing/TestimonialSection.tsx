@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { MOCK_DATA } from "../data/mockData.ts";
+import { MOCK_DATA } from "../../data/mockData.ts";
 
 export const TestimonialSection: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);

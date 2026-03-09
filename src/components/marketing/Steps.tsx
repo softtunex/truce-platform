@@ -1,5 +1,5 @@
 import React from "react";
-import { MOCK_DATA } from "../data/mockData";
+import { MOCK_DATA } from "../../data/mockData";
 
 export const Steps: React.FC = () => {
   return (
