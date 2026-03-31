@@ -9,8 +9,8 @@ export const PartnerLogos: React.FC = () => {
     <section className="pb-10 bg-white overflow-hidden relative border-y border-slate-100/60">
       <div className="max-w-7xl mx-auto px-6 mb-12">
         <div className="flex flex-col items-center gap-3">
-          <p className="text-lg font-black text-emerald-600/50 tracking-[0.5em] text-center">
-            The Trust Network Powering Africa
+          <p className=" font-black text-emerald-600/50 tracking-[0.3em] text-center">
+            Built for all Transaction, Trusted by leading Businesses
           </p>
         </div>
       </div>
@@ -34,8 +34,8 @@ export const PartnerLogos: React.FC = () => {
         </div>
 
         {/* Sophisticated edge masks for smooth entry/exit */}
-        <div className="absolute top-0 left-0 w-32 md:w-64 h-full bg-gradient-to-r from-white via-white/80 to-transparent z-10 pointer-events-none" />
-        <div className="absolute top-0 right-0 w-32 md:w-64 h-full bg-gradient-to-l from-white via-white/80 to-transparent z-10 pointer-events-none" />
+        <div className="absolute top-0 left-0 w-32 md:w-64 h-full bg-gradient-to-r from-white via-white/20 to-transparent z-10 pointer-events-none" />
+        <div className="absolute top-0 right-0 w-32 md:w-64 h-full bg-gradient-to-l from-white via-white/20 to-transparent z-10 pointer-events-none" />
       </div>
     </section>
   );

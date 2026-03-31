@@ -81,7 +81,10 @@ export const AgreementSection: React.FC = () => {
   }, [activeTab]);
 
   return (
-    <section className="py-20 lg:py-24 px-6 bg-[#F8F9FB] relative overflow-hidden">
+    <section
+      id="agreement-section"
+      className="py-20 lg:py-24 px-6 bg-[#F8F9FB] relative overflow-hidden"
+    >
       {/* Increased max-width for wider appearance */}
       <div className="max-w-[1280px] mx-auto">
         {/* Changed grid ratio: Text takes 5 cols, Form takes 7 cols (Wider form) */}
@@ -90,7 +93,7 @@ export const AgreementSection: React.FC = () => {
           <div className="lg:col-span-5 flex flex-col space-y-10">
             <div className="space-y-4">
               <h4 className="text-[#006633] font-bold text-sm tracking-tight">
-                Create Smart Agreement
+                Create a Smart Agreement Today
               </h4>
               <h2 className="text-5xl sm:text-5xl font-[900] text-[#0D1B3E] leading-[1.05] tracking-tight">
                 Trust is the <br />
@@ -105,7 +108,7 @@ export const AgreementSection: React.FC = () => {
 
             {/* Organic Shape Image Container */}
             <div className="relative group inline-block mt-4 w-fit">
-              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-[40%_60%_30%_70%/60%_30%_70%_40%] overflow-hidden shadow-2xl border-8 border-white group-hover:rounded-full transition-all duration-1000 z-10 relative bg-gray-200">
+              <div className="w-64 h-64 sm:w-80 sm:h-80 rounded-[40%_60%_30%_70%/60%_30%_70%_40%] overflow-hidden shadow-2xl group-hover:rounded-full transition-all duration-1000 z-10 relative bg-gray-200">
                 <img
                   src="https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?auto=format&fit=crop&q=80&w=600"
                   alt="Human Trust"
@@ -114,7 +117,7 @@ export const AgreementSection: React.FC = () => {
               </div>
 
               {/* Blue Floating Card */}
-              <div className="absolute -bottom-4 -right-4 sm:-right-16 bg-[#103487] p-4 rounded-2xl shadow-xl max-w-[200px] z-20 animate-float-delayed border border-white/10">
+              <div className="absolute -bottom-4 -right-4 sm:-right-16 bg-[#092544] p-4 rounded-2xl shadow-3xl max-w-[200px] z-20 animate-float-delayed border border-white/10">
                 <p className="text-white text-[11px] font-bold leading-snug">
                   Your money moves only when your conditions are met
                 </p>
@@ -170,13 +173,13 @@ export const AgreementSection: React.FC = () => {
                     {step === 1 && (
                       <div className="space-y-5 animate-fade-in">
                         {/* TruceAssistant Component */}
-                        <div className="mb-2">
+                        {/* <div className="mb-2">
                           <TruceAssistant
                             onSuggest={(val) =>
                               setFormData({ ...formData, description: val })
                             }
                           />
-                        </div>
+                        </div> */}
 
                         <div className="space-y-1.5">
                           <label className="text-[11px] font-bold text-[#0D1B3E] uppercase tracking-wide">
@@ -564,7 +567,7 @@ export const AgreementSection: React.FC = () => {
                         <button
                           onClick={handleContinue}
                           disabled={isLoading}
-                          className="flex-1 bg-[#0F5935] text-white px-8 py-4 rounded-xl font-bold text-sm hover:bg-[#0b4629] transition-all shadow-xl shadow-green-900/20 flex items-center justify-center gap-2 transform active:scale-95"
+                          className="flex-1 bg-[#0F5935] text-white px-8 py-4 rounded-3xl font-bold text-sm hover:bg-[#0b4629] transition-all shadow-xl shadow-green-900/20 flex items-center justify-center gap-2 transform active:scale-95"
                         >
                           {isLoading ? (
                             <span className="animate-pulse">Processing...</span>
