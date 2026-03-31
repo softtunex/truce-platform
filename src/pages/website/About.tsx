@@ -1,91 +1,87 @@
 import React from "react";
-import { Check, ArrowRight } from "lucide-react";
+import { Check } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export const About: React.FC = () => {
   return (
     <div className="bg-white">
-      {/* --- SECTION 1: HERO (Dark Background) --- */}
-      <section className="bg-[#0D1B3E] text-white relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 py-20 lg:py-32">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* Left Content */}
-            <div className="space-y-6 z-10">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-[900] leading-[1.1] tracking-tight">
-                Track. Control. Resolve. <br />
-                Every Agreement in One Place
-              </h1>
+      {/* --- SECTION 1: HERO (Matches about_hero.png) --- */}
+      <section
+        className="relative w-full h-[500px] lg:h-[600px] overflow-hidden bg-no-repeat bg-cover bg-center sm:bg-right"
+        style={{
+          backgroundImage: `url('/images/about_hero.png')`,
+          backgroundColor: "#050A30", // Fallback deep navy
+        }}
+      >
+        {/* Alignment Container */}
+        <div className="max-w-[1280px] mx-auto px-6 h-full relative flex items-center">
+          {/* Typography Overlay: White and Vibrant Green for dark BG contrast */}
+          <div className="relative z-20 max-w-2xl flex flex-col justify-center">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-[1000] text-white leading-[1.05] tracking-tight mb-6">
+              Track. Control. Resolve. <br />
+              Every Agreement in <br />
+              One Place
+            </h1>
 
-              <h2 className="text-[#00C48C] text-xl sm:text-2xl font-bold">
-                Absolute protection for every transaction
-              </h2>
+            {/* Vibrant Green Subtitle to match your image asset */}
+            <h2 className="text-[#4ADE80] text-xl sm:text-2xl font-bold mb-4">
+              Absolute protection for every transaction
+            </h2>
 
-              <div className="w-16 h-1.5 bg-[#84CC16] mt-4 mb-6"></div>
+            {/* Lime Green Rectangle Accent */}
+            <div className="w-24 h-2.5 bg-[#84cc16] mb-8"></div>
 
-              <p className="text-gray-300 text-lg font-medium max-w-lg">
-                Monies move, only when your terms are met.
-              </p>
-            </div>
-
-            {/* Right Image */}
-            <div className="relative flex justify-center lg:justify-end">
-              {/* Background Blob */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-[#1a2f63] rounded-full blur-3xl -z-0"></div>
-
-              <img
-                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
-                alt="Confident Professional"
-                className="relative z-10 w-full max-w-md object-cover rounded-none lg:rounded-tl-[80px] lg:rounded-br-[80px] shadow-2xl"
-              />
-            </div>
+            <p className="text-gray-300 font-medium text-lg sm:text-xl tracking-tight">
+              Monies move, only when your terms are met.
+            </p>
           </div>
         </div>
       </section>
 
       {/* --- SECTION 2: BUYER & SELLER TRUCE (Zig Zag Layout) --- */}
-      <section className="py-20 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 space-y-24">
+      <section className="py-20 lg:py-32 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6 space-y-32">
           {/* Block A: BUYER TRUCE */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Image Side (Laptop Mockup) */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            {/* Image Side */}
             <div className="relative group">
-              <div className="absolute -inset-4 bg-gray-100 rounded-3xl transform -rotate-2 transition-transform group-hover:rotate-0"></div>
+              <div className="absolute -inset-4 bg-gray-50 rounded-[40px] transform -rotate-2 transition-transform group-hover:rotate-0"></div>
               <img
-                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?q=80&w=1000&auto=format&fit=crop"
+                src="/images/truce_laptop2.png"
                 alt="Laptop Interface"
-                className="relative rounded-lg shadow-2xl border-4 border-white"
+                className="relative rounded-3xl shadow-2xl"
               />
-              <div className="absolute -bottom-6 -right-6 bg-[#0F5935] text-white px-6 py-3 rounded-xl font-bold shadow-lg">
-                Create Truce Agreement
+              <div className="absolute -bottom-6 -right-6 bg-[#0F5935] text-white px-8 py-4 rounded-2xl font-bold shadow-xl">
+                Safe & Verified
               </div>
             </div>
 
             {/* Text Side */}
             <div className="space-y-6">
               <div>
-                <h2 className="text-4xl font-[900] text-[#0D1B3E]">
+                <h2 className="text-4xl lg:text-5xl font-[900] text-[#0D1B3E]">
                   Buyer Truce
                 </h2>
-                <h3 className="text-[#0F5935] text-xl font-bold mt-1">
+                <h3 className="text-[#0F5935] text-xl font-bold mt-2">
                   Pay With Confidence
                 </h3>
               </div>
 
-              <div className="border-l-4 border-[#00C48C] pl-4 py-1">
-                <p className="text-lg font-bold text-gray-800">
+              <div className="border-l-4 border-[#4ADE80] pl-6 py-2">
+                <p className="text-xl font-bold text-gray-800">
                   Receive Exactly What You Agreed — Or Recall Your Money Back
                 </p>
               </div>
 
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-500 text-lg leading-relaxed">
                 With Truce, your payment isn't released until the seller
                 delivers exactly as promised. If the agreed terms aren't met,
                 you can recall your funds — no battles, no stress, no losses.
               </p>
 
-              <div className="space-y-3 pt-2">
-                <h4 className="font-bold text-[#0D1B3E]">
-                  Why Buyers Trust us
+              <div className="space-y-4 pt-4">
+                <h4 className="font-black text-[#0D1B3E] uppercase text-xs tracking-widest">
+                  Why Buyers Trust Truce
                 </h4>
                 {[
                   "Funds held securely until you confirm satisfaction",
@@ -94,52 +90,48 @@ export const About: React.FC = () => {
                   "Ability to recall your money if the agreement is breached",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <div className="mt-1 bg-green-100 p-0.5 rounded">
+                    <div className="mt-1 bg-green-100 p-1 rounded-md">
                       <Check
                         className="w-4 h-4 text-[#0F5935]"
-                        strokeWidth={3}
+                        strokeWidth={4}
                       />
                     </div>
-                    <span className="text-gray-600 text-sm">{item}</span>
+                    <span className="text-gray-600 font-medium">{item}</span>
                   </div>
                 ))}
               </div>
-
-              <p className="font-bold text-[#0D1B3E] pt-2">
-                Zero risk. Total control. Absolute peace of mind.
-              </p>
             </div>
           </div>
 
           {/* Block B: SELLER TRUCE */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Text Side (Order 2 on mobile to keep text-image flow, but visually we swap cols) */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+            {/* Text Side (Appears first on desktop via grid order) */}
             <div className="order-2 lg:order-1 space-y-6">
               <div>
-                <h2 className="text-4xl font-[900] text-[#0D1B3E]">
+                <h2 className="text-4xl lg:text-5xl font-[900] text-[#0D1B3E]">
                   Seller Truce
                 </h2>
-                <h3 className="text-[#0F5935] text-xl font-bold mt-1">
+                <h3 className="text-[#0F5935] text-xl font-bold mt-2">
                   Deliver With Trust
                 </h3>
               </div>
 
-              <div className="border-l-4 border-[#00C48C] pl-4 py-1">
-                <p className="text-lg font-bold text-gray-800">
+              <div className="border-l-4 border-[#4ADE80] pl-6 py-2">
+                <p className="text-xl font-bold text-gray-800">
                   See the Buyer's commitment before you transact and get paid
                   without disputes.
                 </p>
               </div>
 
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-500 text-lg leading-relaxed">
                 Serious buyers commit funds upfront to a secure Truce account
                 proving they're ready to pay. Once you meet the agreed terms,
                 payment is released to you — fast and securely.
               </p>
 
-              <div className="space-y-3 pt-2">
-                <h4 className="font-bold text-[#0D1B3E]">
-                  Why Sellers choose Truce
+              <div className="space-y-4 pt-4">
+                <h4 className="font-black text-[#0D1B3E] uppercase text-xs tracking-widest">
+                  Why Sellers Choose Truce
                 </h4>
                 {[
                   "Verified buyer commitment before you deliver",
@@ -148,29 +140,25 @@ export const About: React.FC = () => {
                   "Guaranteed payout when obligations are met",
                 ].map((item, i) => (
                   <div key={i} className="flex items-start gap-3">
-                    <div className="mt-1 bg-green-100 p-0.5 rounded">
+                    <div className="mt-1 bg-green-100 p-1 rounded-md">
                       <Check
                         className="w-4 h-4 text-[#0F5935]"
-                        strokeWidth={3}
+                        strokeWidth={4}
                       />
                     </div>
-                    <span className="text-gray-600 text-sm">{item}</span>
+                    <span className="text-gray-600 font-medium">{item}</span>
                   </div>
                 ))}
               </div>
-
-              <p className="font-bold text-[#0D1B3E] pt-2">
-                No uncertainty. No wasted effort. Just secure business.
-              </p>
             </div>
 
             {/* Image Side */}
             <div className="relative group order-1 lg:order-2">
-              <div className="absolute -inset-4 bg-blue-50 rounded-3xl transform rotate-2 transition-transform group-hover:rotate-0"></div>
+              <div className="absolute -inset-4 bg-blue-50 rounded-[40px] transform rotate-2 transition-transform group-hover:rotate-0"></div>
               <img
-                src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1000&auto=format&fit=crop"
-                alt="Laptop Interface Seller"
-                className="relative rounded-lg shadow-2xl border-4 border-white"
+                src="/images/truce_laptop1.png"
+                alt="Seller Interface"
+                className="relative rounded-3xl shadow-2xl"
               />
             </div>
           </div>
@@ -178,95 +166,78 @@ export const About: React.FC = () => {
       </section>
 
       {/* --- SECTION 3: TRUCE ADVANTAGE --- */}
-      <section className="py-20 bg-[#F9FAFB]">
+      <section className="py-24 bg-[#F8F9FB] border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left: Circular Image & Headline */}
-            <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-8">
-              <div className="relative w-72 h-72 sm:w-96 sm:h-96">
-                <div className="absolute inset-0 bg-orange-400 rounded-full blur-2xl opacity-20 translate-x-4 translate-y-4"></div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+            {/* Left: Circular Visuals */}
+            <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-10">
+              <div className="relative w-80 h-80 sm:w-[450px] sm:h-[450px]">
+                <div className="absolute blur-[80px] opacity-20 translate-x-10 translate-y-10"></div>
                 <img
-                  src="https://images.unsplash.com/photo-1589156191108-c762ff4b96ab?q=80&w=800&auto=format&fit=crop"
-                  alt="Smiling Woman"
-                  className="w-full h-full object-cover rounded-full shadow-2xl relative z-10 border-8 border-white"
+                  src="/images/t6.png"
+                  alt="Truce Community"
+                  className="w-full h-full object-contain rounded-full shadow-[0_32px_64px_-12px_rgba(0,0,0,0.14)] relative z-10"
                 />
               </div>
 
-              <div className="space-y-3">
-                <h2 className="text-4xl sm:text-5xl font-[900] text-[#0D1B3E] leading-tight">
+              <div className="space-y-4">
+                <h2 className="text-4xl sm:text-5xl font-[1000] text-[#0D1B3E] leading-tight">
                   Built to protect <br /> your Money
                 </h2>
-                <p className="text-gray-600 font-medium">
-                  The ultimate protection layer for your digital commerce.
-                </p>
-                <p className="text-sm text-gray-500 max-w-md mx-auto lg:mx-0">
+                <p className="text-gray-500 font-medium text-lg max-w-md mx-auto lg:mx-0">
                   We're building the infrastructure that lets people transact
-                  safely with anyone, from anywhere, turning every agreement
-                  into a digital contract that holds funds invisibly.
+                  safely with anyone, from anywhere.
                 </p>
               </div>
             </div>
 
-            {/* Right: Advantage Text */}
-            <div className="space-y-8">
-              <div>
-                <h2 className="text-4xl font-[900] text-[#0F5935]">
+            {/* Right: Detailed Content */}
+            <div className="space-y-10">
+              <div className="space-y-4">
+                <h2 className="text-4xl font-[900] text-[#0F5935] tracking-tight">
                   Truce Advantage
                 </h2>
-                <h3 className="text-2xl font-bold text-[#0D1B3E] mt-4 leading-tight">
+                <h3 className="text-2xl font-bold text-[#0D1B3E] leading-snug">
                   Truce secures your payment until promises are kept — <br />
                   and returns your money if they're not.
                 </h3>
               </div>
 
-              <div className="space-y-6 text-gray-600 text-lg">
+              <div className="space-y-6 text-gray-500 text-lg leading-relaxed">
                 <p>
                   Truce acts as a neutral digital escrow between both parties —
                   holding funds safely while the transaction is completed under
                   agreed conditions.
                 </p>
-                <p>
-                  Truce keeps all transactions safe, until all parties fulfill
-                  their obligations as captured in the agreement.
-                </p>
 
-                <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-                  <h4 className="font-bold text-[#0D1B3E] mb-2">
-                    If those conditions are not met:
+                <div className="bg-white p-8 rounded-3xl shadow-sm border border-gray-100 space-y-4">
+                  <h4 className="font-bold text-[#0D1B3E] flex items-center gap-2">
+                    <div className="w-2 h-2 bg-red-500 rounded-full" />
+                    If conditions are not met:
                   </h4>
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex gap-2">
-                      <span className="text-red-500 font-bold">*</span>
-                      Buyers can recall their money. Sellers get paid when they
-                      deliver.
+                  <ul className="space-y-3">
+                    <li className="flex gap-3 text-sm font-medium">
+                      <span className="text-[#0F5935]">●</span>
+                      Buyers can recall their money immediately.
                     </li>
-                    <li className="flex gap-2">
-                      <span className="text-red-500 font-bold">*</span>
-                      Balanced protection for both sides — the way transactions
-                      should be.
+                    <li className="flex gap-3 text-sm font-medium">
+                      <span className="text-[#0F5935]">●</span>
+                      Sellers are guaranteed payment only upon delivery.
                     </li>
                   </ul>
                 </div>
               </div>
 
-              <div className="flex items-start gap-4 pt-4">
-                <div className="w-1 h-12 bg-[#00C48C]"></div>
-                <p className="text-[#0F5935] font-bold text-lg">
-                  Join 10K+ people to protect <br />
-                  their transactions with Truce
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-4 pt-4">
+              <div className="flex flex-wrap gap-5 pt-6">
                 <Link
                   to="/"
-                  className="bg-[#0F5935] text-white px-8 py-3.5 rounded-full font-bold hover:bg-[#0b4629] transition-all shadow-lg hover:shadow-xl"
+                  className="bg-[#0F5935] text-white px-10 py-4 rounded-full font-bold hover:bg-[#0b4629] transition-all shadow-xl shadow-green-900/20"
                 >
                   Create Truce Agreement
                 </Link>
                 <Link
                   to="/login"
-                  className="px-8 py-3.5 rounded-full font-bold text-[#0D1B3E] border border-[#0D1B3E] hover:bg-gray-50 transition-all"
+                  className="px-10 py-4 rounded-full font-bold text-[#0D1B3E] border-2 border-[#0D1B3E] hover:bg-[#0D1B3E] hover:text-white transition-all"
                 >
                   My Dashboard
                 </Link>
